@@ -21,19 +21,19 @@ In 3 stappen bouwen we progressive enhancement op:
 
 ### HTML
 
-![HTML Progressive enhancement form](./img/HTML.png)
+![HTML Progressive enhancement form](../img/HTML.png)
 
 Hier heb ik een kleine form neergezet als voorbeeld voor wat progressive enhancement doet. Hier dus een kleine form met 2 input velden en 2 labels.
 
 ### HTML + CSS
 
-![HTML + CSS Progressive enhancement form](./img/CSS.png)
+![HTML + CSS Progressive enhancement form](../img/CSS.png)
 
 Nu ik CSS heb toegevoegd zie je dat het form al een stuk duidelijker wordt, de placeholders zijn in opacity wat omlaag zodat het er ook als een placeholder uitziet, daarnaast is het input field groter gemaakt samen met de submit knop, je ziet hier al dat de usability van dit form al een stuk beter wordt, daarnaast hebben de knoppen nu hover/focus states, zodat de toegankelijkheid een stuk beter wordt.
 
 ### HTML + CSS + JS
 
-![HTML + CSS + JS Progressive enhancement form](./img/JS.png)
+![HTML + CSS + JS Progressive enhancement form](../img/JS.png)
 
 Nu Javascript is toegevoegd kunnen we bijvoorbeeld checken of de hele form wel is ingevuld, Hier is het laatste veld niet ingevuld en dan wordt het vel rood voordat alles verstuurd kan worden
 
