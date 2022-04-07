@@ -1,6 +1,7 @@
 
 
 # ⚙ [Web Enquete](https://browsertechnologiesenquete.herokuapp.com/)
+![Preview](/readme-images/Preview.png)
 
 ## 📂 Assignment
 Make a demo based on a chosen user story, make sure that all users with all browsers can use at least the core functionality and see/hear/feel it. At maximum a really good User Experience
