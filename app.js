@@ -1,9 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
+require('dotenv').config();
 let stringified;
-
-const PORT = 8005;
 
 const app = express();
 
@@ -192,6 +191,6 @@ app.use((req, res) => {
     res.status(404).render('404');
 });
 
-app.listen(PORT, () => {
-    console.log(`Application started on port: http://localhost:${PORT}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Application started on port: http://localhost:${process.env.PORT}`);
 });
