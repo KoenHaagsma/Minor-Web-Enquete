@@ -89,7 +89,7 @@ header > h1 {
     .inzicht > textarea,
     .beoordeling > input,
     .dates > input {
-        width: 50%;
+        width: 80%;
     }
 }
 
