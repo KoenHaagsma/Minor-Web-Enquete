@@ -83,6 +83,16 @@ header > h1 {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .lesstof > textarea,
+    .uitleg > textarea,
+    .inzicht > textarea,
+    .beoordeling > input,
+    .dates > input {
+        width: 50%;
+    }
+}
+
 hr {
     display: none;
 }
