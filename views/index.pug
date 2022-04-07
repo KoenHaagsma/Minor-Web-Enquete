@@ -6,16 +6,19 @@ block content
     form(method="post" action="/wafs" autocomplete="on")
         fieldset 
             legend Naam + studentnummer 
-            label(for="name")
-                b Naam
-            br
-            input(type="text" name="name" id="name" placeholder="Naam" aria-required="true" value=index.name required)
-            br
-            br
-            label(for="number")
-                b Studentennummer
-            br
-            input(type="text" name="number" id="number" placeholder="500987654" pattern="[0-9]{9}" value=index.number title="Voer je studentennummer in" aria-required="true" required)
+            div.naam
+                label(for="name")
+                    b Naam
+                br
+                input(type="text" name="name" id="name" placeholder="Naam" aria-required="true" value=index.name required)
             br
             br
-            input(type="submit" value="Submit")
+            div.nummer
+                label(for="number")
+                    b Studentennummer
+                br
+                input(type="text" name="number" id="number" placeholder="500987654" pattern="[0-9]{9}" value=index.number title="Voer je studentennummer in" aria-required="true" required)
+            br
+            br
+            div.button
+                input(type="submit" value="Start enquete")

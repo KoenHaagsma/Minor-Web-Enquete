@@ -3,148 +3,155 @@
 extends ./layout/layout.pug
 
 block content
-    h2 Bedankt voor het invullen van de enquete dit is de samenvatting:
-    hr
-    section 
-        h2 Gegevens
-        a(href="/") Gegevens aanpassen
-        ul
-            li= 'Naam: ' + personal.name
-            li= 'Studentennummer: ' + personal.number
-    hr
-    section
-        h2 Web apps from scratch
-        a(href="/wafs") Web apps from scratch aanpassen
-        h3 Leraren:
-        ul 
-            if Array.isArray(wafs.teachers)
-                each val in wafs.teachers 
-                    li= val
-            else 
-                li=wafs.teachers
-    section 
-        h3 Weken waarin je dit vak gevolgd hebt
-        ul
-            li= 'Van: Week ' + wafs.week[0] + ' Tot: Week ' + wafs.week[1]
-    section 
-        h3 Beoording van dit vak
-        p= 'Cijfer: ' + wafs.beoordeling
-    section 
-        h3 Hoe moeilijk was het vak
-        p= wafs.lesstof
-    section 
-        h3 Hoe duidelijk werd dit vak uitgelegd
-        p= wafs.uitleg
-    section 
-        h3 Wat zijn nieuwe inzichten die je hebt opgedaan
-        p= wafs.inzicht
-    hr
-    section
-        h2 CSS to the rescue
-        a(href="/cttr") CSS to the rescue aanpassen
-        h3 Leraren:
-        ul 
-            if Array.isArray(cttr.teachers)
-                each val in cttr.teachers 
-                    li= val
-            else 
-                li=cttr.teachers
-    section 
-        h3 Weken waarin je dit vak gevolgd hebt
-        ul
-            li= 'Van: Week ' + cttr.week[0] + ' Tot: Week ' + cttr.week[1]
-    section 
-        h3 Beoording van dit vak
-        p= 'Cijfer: ' + cttr.beoordeling
-    section 
-        h3 Hoe moeilijk was het vak
-        p= cttr.lesstof
-    section 
-        h3 Hoe duidelijk werd dit vak uitgelegd
-        p= cttr.uitleg
-    section 
-        h3 Wat zijn nieuwe inzichten die je hebt opgedaan
-        p= cttr.inzicht
-    hr
-    section
-        h2 Progressive web apps
-        a(href="/pwa") Progressive web apps aanpassen
-        h3 Leraren:
-        ul 
-            if Array.isArray(pwa.teachers)
-                each val in pwa.teachers 
-                    li= val
-            else 
-                li=pwa.teachers
-    section 
-        h3 Weken waarin je dit vak gevolgd hebt
-        ul
-            li= 'Van: Week ' + pwa.week[0] + ' Tot: Week ' + pwa.week[1]
-    section 
-        h3 Beoording van dit vak
-        p= 'Cijfer: ' + pwa.beoordeling
-    section 
-        h3 Hoe moeilijk was het vak
-        p= pwa.lesstof
-    section 
-        h3 Hoe duidelijk werd dit vak uitgelegd
-        p= pwa.uitleg
-    section 
-        h3 Wat zijn nieuwe inzichten die je hebt opgedaan
-        p= pwa.inzicht
-    hr
-    section
-        h2 Human centered design
-        a(href="/hcd") Human centered design aanpassen
-        h3 Leraren:
-        ul 
-            if Array.isArray(hcd.teachers)
-                each val in hcd.teachers 
-                    li= val
-            else 
-                li=hcd.teachers
-    section 
-        h3 Weken waarin je dit vak gevolgd hebt
-        ul
-            li= 'Van: Week ' + hcd.week[0] + ' Tot: Week ' + hcd.week[1]
-    section 
-        h3 Beoording van dit vak
-        p= 'Cijfer: ' + hcd.beoordeling
-    section 
-        h3 Hoe moeilijk was het vak
-        p= hcd.lesstof
-    section 
-        h3 Hoe duidelijk werd dit vak uitgelegd
-        p= hcd.uitleg
-    section 
-        h3 Wat zijn nieuwe inzichten die je hebt opgedaan
-        p= hcd.inzicht
-    hr
-    section
-        h2 Real time web
-        a(href="/rw") Real time web aanpassen
-        h3 Leraren:
-        ul 
-            if Array.isArray(rw.teachers)
-                each val in rw.teachers 
-                    li= val
-            else 
-                li=rw.teachers
-    section 
-        h3 Weken waarin je dit vak gevolgd hebt
-        ul
-            li= 'Van: Week ' + rw.week[0] + ' Tot: Week ' + rw.week[1]
-    section 
-        h3 Beoording van dit vak
-        p= 'Cijfer: ' + rw.beoordeling
-    section 
-        h3 Hoe moeilijk was het vak
-        p= rw.lesstof
-    section 
-        h3 Hoe duidelijk werd dit vak uitgelegd
-        p= rw.uitleg
-    section 
-        h3 Wat zijn nieuwe inzichten die je hebt opgedaan
-        p= rw.inzicht
-    hr
+    div.results
+        h2 Bedankt voor het invullen van de enquete dit is wat je hebt ingevuld:
+        hr
+        section 
+            h2 Gegevens
+            a(href="/") Gegevens aanpassen
+            ul
+                li= 'Naam: ' + personal.name
+                li= 'Studentennummer: ' + personal.number
+        br
+        hr
+        section
+            h2 Web apps from scratch
+            a(href="/wafs") Web apps from scratch aanpassen
+            h3 Leraren:
+            ul 
+                if Array.isArray(wafs.teachers)
+                    each val in wafs.teachers 
+                        li= val
+                else 
+                    li=wafs.teachers
+        section 
+            h3 Weken waarin je dit vak gevolgd hebt
+            ul
+                li= 'Van: Week ' + wafs.week[0] + ' Tot: Week ' + wafs.week[1]
+        section 
+            h3 Beoording van dit vak
+            p= 'Cijfer: ' + wafs.beoordeling
+        section 
+            h3 Hoe moeilijk was het vak
+            p= wafs.lesstof
+        section 
+            h3 Hoe duidelijk werd dit vak uitgelegd
+            p= wafs.uitleg
+        section 
+            h3 Wat zijn nieuwe inzichten die je hebt opgedaan
+            p= wafs.inzicht
+        br
+        hr
+        section
+            h2 CSS to the rescue
+            a(href="/cttr") CSS to the rescue aanpassen
+            h3 Leraren:
+            ul 
+                if Array.isArray(cttr.teachers)
+                    each val in cttr.teachers 
+                        li= val
+                else 
+                    li=cttr.teachers
+        section 
+            h3 Weken waarin je dit vak gevolgd hebt
+            ul
+                li= 'Van: Week ' + cttr.week[0] + ' Tot: Week ' + cttr.week[1]
+        section 
+            h3 Beoording van dit vak
+            p= 'Cijfer: ' + cttr.beoordeling
+        section 
+            h3 Hoe moeilijk was het vak
+            p= cttr.lesstof
+        section 
+            h3 Hoe duidelijk werd dit vak uitgelegd
+            p= cttr.uitleg
+        section 
+            h3 Wat zijn nieuwe inzichten die je hebt opgedaan
+            p= cttr.inzicht
+        hr
+        br
+        section
+            h2 Progressive web apps
+            a(href="/pwa") Progressive web apps aanpassen
+            h3 Leraren:
+            ul 
+                if Array.isArray(pwa.teachers)
+                    each val in pwa.teachers 
+                        li= val
+                else 
+                    li=pwa.teachers
+        section 
+            h3 Weken waarin je dit vak gevolgd hebt
+            ul
+                li= 'Van: Week ' + pwa.week[0] + ' Tot: Week ' + pwa.week[1]
+        section 
+            h3 Beoording van dit vak
+            p= 'Cijfer: ' + pwa.beoordeling
+        section 
+            h3 Hoe moeilijk was het vak
+            p= pwa.lesstof
+        section 
+            h3 Hoe duidelijk werd dit vak uitgelegd
+            p= pwa.uitleg
+        section 
+            h3 Wat zijn nieuwe inzichten die je hebt opgedaan
+            p= pwa.inzicht
+        hr
+        br
+        section
+            h2 Human centered design
+            a(href="/hcd") Human centered design aanpassen
+            h3 Leraren:
+            ul 
+                if Array.isArray(hcd.teachers)
+                    each val in hcd.teachers 
+                        li= val
+                else 
+                    li=hcd.teachers
+        section 
+            h3 Weken waarin je dit vak gevolgd hebt
+            ul
+                li= 'Van: Week ' + hcd.week[0] + ' Tot: Week ' + hcd.week[1]
+        section 
+            h3 Beoording van dit vak
+            p= 'Cijfer: ' + hcd.beoordeling
+        section 
+            h3 Hoe moeilijk was het vak
+            p= hcd.lesstof
+        section 
+            h3 Hoe duidelijk werd dit vak uitgelegd
+            p= hcd.uitleg
+        section 
+            h3 Wat zijn nieuwe inzichten die je hebt opgedaan
+            p= hcd.inzicht
+        hr
+        br
+        section
+            h2 Real time web
+            a(href="/rw") Real time web aanpassen
+            h3 Leraren:
+            ul 
+                if Array.isArray(rw.teachers)
+                    each val in rw.teachers 
+                        li= val
+                else 
+                    li=rw.teachers
+        section 
+            h3 Weken waarin je dit vak gevolgd hebt
+            ul
+                li= 'Van: Week ' + rw.week[0] + ' Tot: Week ' + rw.week[1]
+        section 
+            h3 Beoording van dit vak
+            p= 'Cijfer: ' + rw.beoordeling
+        section 
+            h3 Hoe moeilijk was het vak
+            p= rw.lesstof
+        section 
+            h3 Hoe duidelijk werd dit vak uitgelegd
+            p= rw.uitleg
+        section 
+            h3 Wat zijn nieuwe inzichten die je hebt opgedaan
+            p= rw.inzicht
+        hr
+        br
 
