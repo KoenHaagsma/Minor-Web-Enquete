@@ -13,9 +13,15 @@
 -   [About the project](##About-the-project)
       * [Built with](###Built-with)
       * [Features](###Features)
+      * [Checklist](###Checklist)
+      * [Wireflow](###Wireflow)
+      * [Layers](###Layers)
+      * [Browsers](###Browsers)
+      * [Test Report](###Test-Report)
 -   [Activity Diagram](##Activity-Diagram)
 -   [Getting started](##Getting-started)
       * [Installation](##Installation)
+-   [Sources](##Sources)
 -   [License](##License)
 
 ## 📖 About the project
@@ -37,20 +43,24 @@
 ## 🔍 Getting started
 *Before you can start you need to follow the installation*
 
-## 🔨 Installation
+### 🔨 Installation
 1. Open the terminal, or use the terminal in your IDE
 
 2. Clone the repository
 ```
-git clone https://github.com/KoenHaagsma/enquete_web.git
+git clone https://github.com/KoenHaagsma/Minor-Web-Enquete.git
 ```
 3. Go to the cloned repository
 ```
-cd enquete_web
+cd Minor-Web-Enquete
 ```
-4. Start application with [Live-Server in VSCODE](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+4. Install all packages
 ```
-Right bottom: 'Go live'
+npm install || npm i
+```
+5. Start the application for development
+```
+npm run dev
 ```
 
 ## 📑 Sources
