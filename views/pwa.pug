@@ -1,0 +1,70 @@
+//- pwa.pug
+
+extends ./layout/layout.pug
+
+block content
+    form(method="post" action="/bt" autocomplete="on")
+        fieldset
+            legend Progressive web apps
+            label 
+                b Leraren
+            br
+            br
+            input(type="checkbox" id="teacher1" name="teacher" value="Robert Spier" checked)
+            label(for="teacher1") Robert Spier
+            br
+            input(type="checkbox" id="teacher2" name="teacher" value="Koop Reynders")
+            label(for="teacher2") Koop Reynders
+            br
+            input(type="checkbox" id="teacher3" name="teacher" value="Joost Faber")
+            label(for="teacher3") Joost Faber
+            br
+            input(type="checkbox" id="teacher4" name="teacher" value="Justes Sturkenboom")
+            label(for="teacher4") Justes Sturkenboom
+            br
+            input(type="checkbox" id="teacher5" name="teacher" value="Sanne Hooft")
+            label(for="teacher5") Sanne Hooft
+            br
+            hr
+            label
+                b Weken waarin je het vak hebt gevolgd
+            br
+            br
+            label(for="van") Van:
+            input(type="number" min="1" max="52" id="van" name="week" value=pwa.week[0])
+            br
+            br
+            label(for="tot") Tot:
+            input(type="number" min="1" max="52" id="tot" name="week" value=pwa.week[1])
+            br
+            hr
+            label
+                b Beoordeling
+            br
+            br
+            label(for="beoordeling") Van 1 tot 10
+            br
+            input(type="number" min="1" max="10" value=pwa.beoordeling id="beoordeling" name="beoordeling")
+            br
+            hr
+            label(for="lesstof")
+                b Moeilijkheid lesstof
+            br
+            br
+            textarea(id="lesstof" name="lesstof" rows="4" cols="50" placeholder="..." aria-required="true" required)= pwa.lesstof
+            br
+            hr
+            label(for="uitleg")
+                b Hoe duidelijk is de lesstof uitgelegd
+            br
+            br
+            textarea(id="uitleg" name="uitleg" rows="4" cols="50" placeholder="..." aria-required="true" required)= pwa.uitleg
+            br
+            hr
+            label(for="inzicht")
+                b Wat heb je geleerd bij het vak
+            br
+            br
+            textarea(id="inzicht" name="inzicht" rows="4" cols="50" placeholder="..." aria-required="true" required)= pwa.inzicht
+            br
+            input(type="submit" value="Submit")
