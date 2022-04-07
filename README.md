@@ -26,6 +26,14 @@
 
 ### ✔ Checklist
 
+### 🧵 Wireflow
+
+### 🔉 Layers
+
+### 📚 Browsers
+
+### 👩‍💻 Test report
+
 ## 🔍 Getting started
 *Before you can start you need to follow the installation*
 
@@ -34,11 +42,11 @@
 
 2. Clone the repository
 ```
-git clone https://github.com/KoenHaagsma/Healty-food-helper.git
+git clone https://github.com/KoenHaagsma/enquete_web.git
 ```
 3. Go to the cloned repository
 ```
-cd ../../Healty-food-helper
+cd enquete_web
 ```
 4. Start application with [Live-Server in VSCODE](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 ```
