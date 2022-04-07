@@ -7,7 +7,7 @@
 ## 📃 Assignments
 - [Assignment 1: Progressive enhancement research](https://github.com/KoenHaagsma/browser-technologies-2122/wiki/Assignment-1)
 - [Assignment 2: Break the web](https://github.com/KoenHaagsma/browser-technologies-2122/wiki/Assignment-2)
-- [Final Assignment]()
+- Final Assignment: Below here in the readme
 
 ## 🧾 Table of contents
 -   [About the project](##About-the-project)
