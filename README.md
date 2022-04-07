@@ -48,9 +48,8 @@ Daarna ben ik begonnen met het stylen van de pagina, toen heb ik gelijk gekeken 
 
 Als laatste ben ik bezig geweest met de Javascript client side, wat ik vooral gedaan heb met JS is feedback creëren voor de gebruiker, dus velden markeren die niet goed zijn en wat er dan precies fout is.
 
-### 🧵 Wireflow
-
-### 🔉 Layers
+### 🧵 Breakdown
+![Breakdown](/readme-images/Breakdown.png)
 
 ### 📚 Browsers
 - Firefox - Version 99.0 (64-bits)
@@ -92,7 +91,8 @@ npm run dev
 ```
 
 ## 📑 Sources
-- [Can i use it]()
+- [Can i use it](https://caniuse.com/)
+- [Chromium based browsers](https://www.slant.co/topics/23761/~browsers-not-based-on-chromium)
 
 ## 🔖 License
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)]()
