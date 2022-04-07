@@ -77,21 +77,19 @@ app.post('/wafs', (req, res) => {
     };
 
     stringified = JSON.stringify(data);
-    console.log(stringified);
 
     fs.writeFile('json/data.json', stringified, (err) => {
-        if (err) console.log(err);
+        if (err) console.error(err);
     });
     fsReadFile(res, 'wafs');
 });
 
 app.post('/cttr', (req, res) => {
-    console.log(req.body);
     const wafs = dataCollector(req);
     stringified = JSON.stringify(wafs);
 
     fs.writeFile('json/wafs.json', stringified, (err) => {
-        if (err) console.log(err);
+        if (err) console.error(err);
     });
 
     fsReadFile(res, 'cttr');
@@ -102,7 +100,7 @@ app.post('/pwa', (req, res) => {
     stringified = JSON.stringify(cttr);
 
     fs.writeFile('json/cttr.json', stringified, (err) => {
-        if (err) console.log(err);
+        if (err) console.error(err);
     });
 
     fsReadFile(res, 'pwa');
@@ -113,7 +111,7 @@ app.post('/bt', (req, res) => {
     stringified = JSON.stringify(pwa);
 
     fs.writeFile('json/pwa.json', stringified, (err) => {
-        if (err) console.log(err);
+        if (err) console.error(err);
     });
 
     fsReadFile(res, 'bt');
@@ -124,7 +122,7 @@ app.post('/hcd', (req, res) => {
     stringified = JSON.stringify(bt);
 
     fs.writeFile('json/bt.json', stringified, (err) => {
-        if (err) console.log(err);
+        if (err) console.error(err);
     });
 
     fsReadFile(res, 'hcd');
@@ -135,7 +133,7 @@ app.post('/rw', (req, res) => {
     stringified = JSON.stringify(hcd);
 
     fs.writeFile('json/hcd.json', stringified, (err) => {
-        if (err) console.log(err);
+        if (err) console.error(err);
     });
 
     fsReadFile(res, 'rw');
@@ -145,7 +143,7 @@ function readFromFile(file) {
     return new Promise((resolve, reject) => {
         fs.readFile(file, (err, data) => {
             if (err) {
-                console.log(err);
+                console.error(err);
                 reject(err);
             } else {
                 resolve(JSON.parse(data));
@@ -159,7 +157,7 @@ app.post('/results', (req, res) => {
     stringified = JSON.stringify(rw);
 
     fs.writeFile('json/rw.json', stringified, (err) => {
-        if (err) console.log(err);
+        if (err) console.error(err);
     });
 
     const promises = [
@@ -185,7 +183,7 @@ app.post('/results', (req, res) => {
             });
         })
         .catch((err) => {
-            console.log(err);
+            console.error(err);
             res.render('error');
         });
 });
